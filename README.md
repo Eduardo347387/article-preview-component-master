@@ -7,7 +7,7 @@
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Add live site URL here](https://charming-chimera-501d06.netlify.app/)
 
 
 ## Author
