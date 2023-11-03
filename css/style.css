@@ -1,0 +1,303 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap");
+:root {
+  --Very_Dark_Grayish_Blue: hsl(217, 19%, 35%);
+  --Desaturated_Dark_Blue: hsl(214, 17%, 51%);
+  --Grayish_Blue: hsl(212, 23%, 69%);
+  --Light_Grayish_Blue: hsl(210, 46%, 95%);
+  --Manrope: "Manrope";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.3em;
+  font-family: var(--Manrope);
+  background: var(--Light_Grayish_Blue);
+}
+
+.img-box {
+  position: relative;
+}
+.img-box img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.box {
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--Very_Dark_Grayish_Blue);
+  width: 100%;
+  height: 100%;
+}
+
+.text-share {
+  color: var(--Desaturated_Dark_Blue);
+  font-size: 1.2em;
+  font-weight: 500;
+  letter-spacing: 0.3rem;
+}
+
+.box-social-media {
+  margin-left: 0.3rem;
+  margin-right: 40px;
+}
+
+.img-social-media {
+  width: 2.2rem;
+  height: 2.2rem;
+  margin-left: 1.5rem;
+}
+
+.button-share {
+  border: none;
+  outline: 0;
+  border-radius: 50%;
+  width: 3.3rem;
+  height: 3.3rem;
+  background-color: var(--Desaturated_Dark_Blue);
+}
+
+.container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 0 2rem;
+}
+.container .card {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  width: 100%;
+  height: 49.8rem;
+}
+.container .card .img-box {
+  height: 40%;
+}
+.container .card .width-min {
+  flex: 1;
+  min-width: 20rem;
+}
+.container .card .content-box .content-text {
+  padding: 3.5rem 1.8rem 2.8rem 2.9rem;
+}
+.container .card .content-box .content-text h2 {
+  font-weight: 700;
+  font-size: 1.4em;
+  color: var(--Very_Dark_Grayish_Blue);
+}
+.container .card .content-box .content-text p {
+  margin-right: 1.2rem;
+  margin-top: 1.6rem;
+  line-height: 1.5em;
+  font-size: 1.07em;
+  font-weight: 500;
+  color: var(--Desaturated_Dark_Blue);
+}
+.container .card .content-box .content-info {
+  padding: 0 1.8rem 0.9rem 2.9rem;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.container .card .content-box .content-info .img-box {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 1.5rem;
+}
+.container .card .content-box .content-info .text-info {
+  margin-right: 7.4rem;
+}
+.container .card .content-box .content-info .text-info h4 {
+  font-size: 1em;
+  display: block;
+  font-weight: 700;
+  color: var(--Very_Dark_Grayish_Blue);
+}
+.container .card .content-box .content-info .text-info h4 span {
+  display: block;
+  font-weight: 500;
+  font-size: 0.8em;
+  color: var(--Grayish_Blue);
+}
+.container .card .content-box .content-info #share {
+  cursor: pointer;
+  border: none;
+  outline: 0;
+  width: 3.4rem;
+  height: 3.4rem;
+  border-radius: 50%;
+  display: flex;
+  position: relative;
+}
+.container .card .content-box .content-info #share .img-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 2.2rem;
+  height: 2.2rem;
+  background-image: url(../images/icon-share.svg);
+  background-size: 1.6rem;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media (min-width: 768px) {
+  #shar {
+    cursor: pointer;
+    display: none;
+  }
+  .box {
+    border-radius: 0.8rem;
+    top: -6rem;
+    left: unset;
+    right: 0;
+    width: 23rem;
+    height: 5rem;
+    transform: translateY(-1.2rem);
+  }
+  .box::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    border-width: 1.1rem;
+    border-style: solid;
+    border-color: var(--Very_Dark_Grayish_Blue) transparent transparent transparent;
+    transform: translateX(7rem);
+  }
+  .text-share {
+    font-size: 1em;
+    font-weight: 500;
+    letter-spacing: 0.4rem;
+  }
+  .box-social-media {
+    margin-left: 0.3rem;
+    margin-right: 0;
+  }
+  .img-social-media {
+    width: 1.8rem;
+    height: 1.8rem;
+    margin-left: 1.5rem;
+  }
+  .button-share {
+    border: none;
+    outline: 0;
+    width: 3.3rem;
+    height: 3.3rem;
+  }
+  .container .card {
+    overflow: unset;
+    height: 55rem;
+  }
+  .container .card .width-min .banner-img {
+    border-top-left-radius: 1.2rem;
+    border-top-right-radius: 1.2rem;
+  }
+  .container .card .content-box {
+    display: flex;
+  }
+  .container .card .content-box .content-text {
+    width: 34.5rem;
+  }
+  .container .card .content-box .content-info {
+    position: relative;
+    margin-top: 3.9rem;
+    align-self: flex-start;
+    flex: 1;
+    justify-content: end;
+  }
+  .container .card .content-box .content-info #share {
+    background-color: var(--Very_Dark_Grayish_Blue);
+  }
+  .container .card .content-box .content-info #share .img-box {
+    background-image: url(../images/icon-share2.svg);
+  }
+}
+@media (min-width: 1024px) {
+  .box {
+    right: -5%;
+    transform: translateY(0);
+  }
+  .box::before {
+    transform: translateX(-50%);
+  }
+  .container .card {
+    max-width: 96rem;
+    height: 33rem;
+    flex-direction: row;
+  }
+  .container .card .width-min .banner-img {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 1.2rem;
+  }
+  .container .card .img-box {
+    width: 40%;
+    height: unset;
+  }
+  .container .card .content-box {
+    flex-direction: column;
+    width: 60%;
+    padding-left: 1.8rem;
+  }
+  .container .card .content-box .content-text {
+    width: unset;
+    max-width: 50rem;
+    padding-bottom: 0;
+  }
+  .container .card .content-box .content-text h2 {
+    letter-spacing: 0.1rem;
+    width: 95%;
+    font-size: 1.8em;
+  }
+  .container .card .content-box .content-text p {
+    margin-top: 1.9rem;
+    width: 95%;
+    font-size: 1.1em;
+    letter-spacing: 0.07rem;
+    line-height: 2.5rem;
+  }
+  .container .card .content-box .content-info {
+    margin-top: 2rem;
+    padding-bottom: 0;
+    align-self: unset;
+    justify-content: unset;
+    flex: 0;
+  }
+  .container .card .content-box .content-info .img-box {
+    width: 4.9rem;
+    height: 4.9rem;
+    margin-right: 1.9rem;
+  }
+  .container .card .content-box .content-info .text-info {
+    margin-right: 23.1rem;
+  }
+  .container .card .content-box .content-info .text-info h4 {
+    font-size: 1.1em;
+  }
+}/*# sourceMappingURL=style.css.map */
