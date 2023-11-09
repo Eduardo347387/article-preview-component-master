@@ -245,7 +245,6 @@ body {
     height: unset;
   }
   .container .card .content-box {
-    border: 1px solid;
     flex-direction: column;
     width: 60%;
     padding-top: 1.6rem;
