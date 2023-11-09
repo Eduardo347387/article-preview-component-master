@@ -229,7 +229,7 @@ body {
     transform: translateY(0);
   }
   .box::before {
-    transform: translateX(-50%);
+    transform: translateX(-40%);
   }
   .container .card {
     max-width: 96rem;
@@ -245,8 +245,10 @@ body {
     height: unset;
   }
   .container .card .content-box {
+    border: 1px solid;
     flex-direction: column;
     width: 60%;
+    padding-top: 1.6rem;
     padding-left: 1.8rem;
   }
   .container .card .content-box .content-text {
@@ -254,7 +256,7 @@ body {
     max-width: 50rem;
     padding-bottom: 0;
   }
-  .container .card .content-box .content-text h2 {
+  .container .card .content-box .content-text .titulo {
     letter-spacing: 0.1rem;
     width: 95%;
     font-size: 1.8em;
@@ -279,9 +281,9 @@ body {
     margin-right: 1.9rem;
   }
   .container .card .content-box .content-info .text-info {
-    margin-right: 24.2rem;
+    margin-right: 23.1rem;
   }
-  .container .card .content-box .content-info .text-info h4 {
+  .container .card .content-box .content-info .text-info p {
     font-size: 1.1em;
   }
 }/*# sourceMappingURL=style.css.map */

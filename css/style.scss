@@ -247,7 +247,7 @@ body{
         right: -5%;
         transform: translateY(0);
         &::before{
-            transform: translateX(-50%);
+            transform: translateX(-40%);
         }
     }
     .container{
@@ -266,15 +266,17 @@ body{
                 height: unset;    
             }
             .content-box{
+                border: 1px solid;
                 flex-direction: column;
                 width: 60%;
+                padding-top: 1.6rem;
                 padding-left: 1.8rem;
                 .content-text{
                     width: unset;
                     max-width: 50rem;
                     padding-bottom: 0;
               
-                    h2{
+                    .titulo{
                         letter-spacing: 0.1rem;
                         width: 95%;
                         font-size: 1.8em;
@@ -299,8 +301,8 @@ body{
                         margin-right: 1.9rem;
                     }
                     .text-info{
-                        margin-right: 24.2rem;
-                        h4{
+                        margin-right: 23.1rem;
+                        p{
                             font-size: 1.1em;
                         }
                     }
