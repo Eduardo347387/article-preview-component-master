@@ -91,7 +91,7 @@ body {
   border-radius: 12px;
   overflow: hidden;
   width: 100%;
-  height: 49.8rem;
+  height: 50rem;
 }
 .container .card .img-box {
   height: 40%;
@@ -101,11 +101,11 @@ body {
   min-width: 20rem;
 }
 .container .card .content-box .content-text {
-  padding: 3.5rem 1.8rem 2.8rem 2.9rem;
+  padding: 1rem 1.8rem 2.8rem 2.9rem;
 }
-.container .card .content-box .content-text h2 {
+.container .card .content-box .content-text .titulo {
   font-weight: 700;
-  font-size: 1.4em;
+  font-size: 1.7rem;
   color: var(--Very_Dark_Grayish_Blue);
 }
 .container .card .content-box .content-text p {
@@ -117,7 +117,7 @@ body {
   color: var(--Desaturated_Dark_Blue);
 }
 .container .card .content-box .content-info {
-  padding: 0 1.8rem 0.9rem 2.9rem;
+  padding: 0 1.8rem 1.5rem 2.9rem;
   display: flex;
   align-items: center;
   position: relative;
@@ -132,13 +132,13 @@ body {
 .container .card .content-box .content-info .text-info {
   margin-right: 7.4rem;
 }
-.container .card .content-box .content-info .text-info h4 {
+.container .card .content-box .content-info .text-info p {
   font-size: 1em;
   display: block;
   font-weight: 700;
   color: var(--Very_Dark_Grayish_Blue);
 }
-.container .card .content-box .content-info .text-info h4 span {
+.container .card .content-box .content-info .text-info p span {
   display: block;
   font-weight: 500;
   font-size: 0.8em;
@@ -151,16 +151,6 @@ body {
   width: 3.4rem;
   height: 3.4rem;
   border-radius: 50%;
-  display: flex;
-  position: relative;
-}
-.container .card .content-box .content-info #share .img-box {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 2.2rem;
-  height: 2.2rem;
   background-image: url(../images/icon-share.svg);
   background-size: 1.6rem;
   background-repeat: no-repeat;
@@ -232,12 +222,6 @@ body {
     flex: 1;
     justify-content: end;
   }
-  .container .card .content-box .content-info #share {
-    background-color: var(--Very_Dark_Grayish_Blue);
-  }
-  .container .card .content-box .content-info #share .img-box {
-    background-image: url(../images/icon-share2.svg);
-  }
 }
 @media (min-width: 1024px) {
   .box {
@@ -295,7 +279,7 @@ body {
     margin-right: 1.9rem;
   }
   .container .card .content-box .content-info .text-info {
-    margin-right: 23.1rem;
+    margin-right: 24.2rem;
   }
   .container .card .content-box .content-info .text-info h4 {
     font-size: 1.1em;
